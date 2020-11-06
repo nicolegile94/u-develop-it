@@ -30,7 +30,6 @@ app.get('/api/candidates', (req, res) => {
     });
 });
 
-
 app.get('/api/candidate/:id', (req, res) => {
     const sql = `SELECT * FROM candidates
                 WHERE id = ?`;
